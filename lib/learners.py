@@ -97,7 +97,7 @@ def sigmoid_func(
 
 def compute_loss(
     formula: WSTL.WSTL_Formula,
-    signals: tuple or list,
+    signals: tuple | list,
     preferences: list,
     initial_norm: float,
     scale: float,
@@ -198,7 +198,7 @@ def get_learning_settings(**kwargs):
 
 def WSTL_learner(
     formula: WSTL.WSTL_Formula,
-    input_signals: tuple or list,
+    input_signals: tuple | list,
     train_preference_data: list,
     test_preference_data: list,
     **kwargs,
@@ -342,7 +342,7 @@ def WSTL_learner(
 
 def single_instance_learner(
     instance_info: list,
-    input_signals: list or tuple,
+    input_signals: list | tuple,
     inputs_max: tuple,
     formula: WSTL.WSTL_Formula,
     training_preferences: list,

@@ -174,7 +174,7 @@ def create_input_signals(
 
 
 def get_robustness(
-    formula: WSTL.WSTL_Formula, signals: tuple or list, scale: float
+    formula: WSTL.WSTL_Formula, signals: tuple | list, scale: float
 ):
     """
     Computes robustness values of given signals and formula formula.
@@ -247,7 +247,7 @@ def create_formula(scenario, max_input):
 
 def print_robustness(
     formula: WSTL.WSTL_Formula,
-    input_signals: tuple or list,
+    input_signals: tuple | list,
     preference_data: list,
 ):
     """
@@ -489,7 +489,7 @@ def preference_loader(filename: str, scenario: str):
 
 def generate_preference_data(
     formula: WSTL.WSTL_Formula,
-    signals: tuple or list,
+    signals: tuple | list,
     scale=-1,
     human_reference: list = None,
     seed: int = None,
@@ -561,7 +561,7 @@ def generate_preference_data(
 
 # --- STATS FUNCTIONS ---
 def compute_accuracy(
-    formula: WSTL.WSTL_Formula, signals: tuple or list, preferences: list
+    formula: WSTL.WSTL_Formula, signals: tuple | list, preferences: list
 ):
     """
     Compute accuracy of the given WSTL formula on the given preferece data.
